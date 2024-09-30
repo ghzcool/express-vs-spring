@@ -1,6 +1,8 @@
 import cluster from 'cluster';
 import os from 'os';
 
+const fs = require('fs');
+
 if (cluster.isWorker) {
   console.log(`Starting worker process ` + process.pid);
   require('./index');
@@ -10,6 +12,7 @@ if (cluster.isWorker) {
   const saveReport = () => {
     console.clear();
     console.log(report);
+    fs.writeFileSync('../report/report.json', JSON.stringify(report, null, 2), 'utf8');
   };
 
   const CPU_CORES = +process.env.CPU_CORES;

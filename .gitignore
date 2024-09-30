@@ -7,3 +7,5 @@
 /test/node_modules/
 /spring/target/
 /spring/gradle/
+/test/dist/
+/node/dist/

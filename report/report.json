@@ -1,0 +1,13 @@
+{
+  "coresUsed": 8,
+  "time": 23862,
+  "testsPerCore": 10000,
+  "testsInParallel": 160,
+  "testsProcessed": 80000,
+  "requestsSent": 240000,
+  "requestsFailed": 0,
+  "minRequestTime": 0,
+  "maxRequestTime": 87,
+  "max01RequestTime": 63.31250000000001,
+  "avgRequestTime": 14.796045833333332
+}
