@@ -1,0 +1,23 @@
+{
+  "name": "test-performance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cluster.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "npm run build && node dist/cluster.js",
+    "start-single-core": "npm run build && node dist/index.js",
+    "tsc-watch": "rimraf dist && tsc -w",
+    "dev": "node --watch dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
